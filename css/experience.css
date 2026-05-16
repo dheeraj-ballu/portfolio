@@ -256,6 +256,15 @@
 @media (max-width: 600px) {
   .exp-stats-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: 1fr; }
+  .cert-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 24px;
+  }
+  .cert-medal {
+    margin: 8px auto 0;
+  }
   .tl-item { margin-left: 56px !important; }
   .tl-dot { width: 44px; height: 44px; }
   .tl-item .tl-dot { left: -52px !important; }
