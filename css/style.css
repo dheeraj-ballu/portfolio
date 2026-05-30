@@ -370,18 +370,7 @@ body.light-mode .navbar.scrolled { background: rgba(240,244,255,0.97); }
 @keyframes glow { 0%,100%{opacity:0.5} 50%{opacity:1} }
 @keyframes slideInUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
 
-/* ── WhatsApp Float Button ────────────────────────────────── */
-.whatsapp-float {
-  position: fixed; bottom: 90px; right: 28px; z-index: 998;
-  width: 54px; height: 54px; border-radius: 50%;
-  background: #25d366;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.5rem; color: white;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
-  transition: var(--transition);
-  animation: floatY 3s ease-in-out infinite;
-}
-.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.6); }
+
 
 /* ── Back-to-Top ──────────────────────────────────────────── */
 .back-to-top {
@@ -491,6 +480,73 @@ body.light-mode .navbar.scrolled { background: rgba(240,244,255,0.97); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr;   }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* ── Premium Demo Offer Styling ───────────────────────────── */
+.cta-trust-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 14px;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+  line-height: 1.4;
+}
+.cta-trust-note .trust-badge {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 10px rgba(6, 182, 212, 0.1);
+}
+body.light-mode .cta-trust-note .trust-badge {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: rgba(124, 58, 237, 0.2);
+  color: var(--primary);
+}
+.highlight-99 {
+  background: linear-gradient(135deg, #ec4899 0%, #9f67ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  padding: 0 4px;
+}
+.highlight-99::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg, #ec4899, #9f67ff);
+  opacity: 0.4;
+  border-radius: 2px;
+}
+.badge-refund {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(236, 72, 153, 0.15);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  color: var(--accent-pink);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
