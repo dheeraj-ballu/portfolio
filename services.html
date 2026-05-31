@@ -28,6 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shared.css" />
   <link rel="stylesheet" href="css/services.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
@@ -119,8 +120,8 @@
   <canvas id="particles-canvas"></canvas>
   <div class="sb-orb sb-orb1"></div>
   <div class="sb-orb sb-orb2"></div>
-  <div class="container" style="position:relative;z-index:1;text-align:center;">
-    <div class="ab-breadcrumb reveal" style="justify-content:center"><a href="index.html">Home</a><span>/</span>Services</div>
+  <div class="container banner-container">
+    <div class="ab-breadcrumb reveal breadcrumb-center"><a href="index.html">Home</a><span>/</span>Services</div>
     <h1 class="ab-title reveal delay-1">Our <span class="gradient-text">Services</span></h1>
     <p class="ab-subtitle reveal delay-2">Expert coaching programs tailored for every learning need and goal</p>
   </div>
@@ -138,7 +139,7 @@
     <div class="srv-grid">
 
       <div class="srv-card glass-card tilt-card reveal delay-1">
-        <div class="srv-card-header" style="background:linear-gradient(135deg,rgba(124,58,237,0.3),rgba(159,103,255,0.2))">
+        <div class="srv-card-header srv-header-math">
           <div class="srv-icon">📐</div>
           <div class="srv-badge">Most Popular</div>
         </div>
@@ -155,12 +156,12 @@
           <div class="srv-levels">
             <span>Class 6–10</span><span>Class 11–12</span><span>Competitive</span>
           </div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px">Enroll Now →</a>
+          <a href="contact.html" class="btn btn-primary srv-enroll-btn">Enroll Now →</a>
         </div>
       </div>
 
       <div class="srv-card glass-card tilt-card reveal delay-2">
-        <div class="srv-card-header" style="background:linear-gradient(135deg,rgba(59,130,246,0.3),rgba(6,182,212,0.2))">
+        <div class="srv-card-header srv-header-sci">
           <div class="srv-icon">🔬</div>
         </div>
         <div class="srv-body">
@@ -176,12 +177,12 @@
           <div class="srv-levels">
             <span>Class 2–5</span><span>Class 6–10</span><span>Competitive</span>
           </div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px">Enroll Now →</a>
+          <a href="contact.html" class="btn btn-primary srv-enroll-btn">Enroll Now →</a>
         </div>
       </div>
 
       <div class="srv-card glass-card tilt-card reveal delay-3">
-        <div class="srv-card-header" style="background:linear-gradient(135deg,rgba(6,182,212,0.3),rgba(8,145,178,0.2))">
+        <div class="srv-card-header srv-header-eng">
           <div class="srv-icon">📖</div>
         </div>
         <div class="srv-body">
@@ -197,33 +198,12 @@
           <div class="srv-levels">
             <span>Beginners</span><span>Intermediate</span><span>Advanced</span>
           </div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px">Enroll Now →</a>
+          <a href="contact.html" class="btn btn-primary srv-enroll-btn">Enroll Now →</a>
         </div>
       </div>
 
       <div class="srv-card glass-card tilt-card reveal delay-4">
-        <div class="srv-card-header" style="background:linear-gradient(135deg,rgba(236,72,153,0.3),rgba(124,58,237,0.2))">
-          <div class="srv-icon">💻</div>
-        </div>
-        <div class="srv-body">
-          <h3>Online Live Classes</h3>
-          <p>Interactive live sessions via Zoom/Google Meet with screen sharing, digital whiteboard, recordings, and real-time doubt resolution from anywhere in the world.</p>
-          <ul class="srv-features">
-            <li>✓ Live interactive video sessions</li>
-            <li>✓ Session recordings provided</li>
-            <li>✓ Digital notes &amp; materials</li>
-            <li>✓ WhatsApp support group</li>
-            <li>✓ Global access, flexible timing</li>
-          </ul>
-          <div class="srv-levels">
-            <span>All Subjects</span><span>All Levels</span><span>Global</span>
-          </div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px">Enroll Now →</a>
-        </div>
-      </div>
-
-      <div class="srv-card glass-card tilt-card reveal delay-5">
-        <div class="srv-card-header" style="background:linear-gradient(135deg,rgba(79,70,229,0.3),rgba(124,58,237,0.2))">
+        <div class="srv-card-header srv-header-phy">
           <div class="srv-icon">🧪</div>
           <div class="srv-badge">Advanced Learning</div>
         </div>
@@ -240,7 +220,7 @@
           <div class="srv-levels">
             <span>Class 9–12</span><span>NEET/JEE</span><span>Advanced</span>
           </div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px">Enroll Now →</a>
+          <a href="contact.html" class="btn btn-primary srv-enroll-btn">Enroll Now →</a>
         </div>
       </div>
 
@@ -278,7 +258,7 @@
           <li class="pf-no"><span class="pf-x">✗</span> Live doubt sessions</li>
           <li class="pf-no"><span class="pf-x">✗</span> Progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-outline plan-btn-full">Get Started</a>
       </div>
 
       <!-- Professional (Featured) -->
@@ -302,7 +282,7 @@
           <li><span class="pf-check">✓</span> 2 Doubt sessions/month</li>
          <li class="pf-no"><span class="pf-x">✗</span> Monthly progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-primary plan-btn-full">Get Started</a>
       </div>
 
       <!-- Advanced -->
@@ -325,11 +305,11 @@
           <li><span class="pf-check">✓</span> 5 doubt sessions</li>
          <li><span class="pf-check">✓</span> Monthly progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-outline plan-btn-full">Get Started</a>
       </div>
     </div>
 
-    <div class="section-center reveal" style="margin-top: 80px;">
+    <div class="section-center reveal srv-section-tag-center">
       <div class="section-tag">🧪 Science &amp; Math Pricing</div>
       <h2 class="section-title">Science &amp; Math <span>Pricing Plans</span></h2>
       <p class="section-subtitle">Choose a comprehensive plan for Physics, Chemistry, and Mathematics. Perfect for board exams and competitive preparation.</p>
@@ -358,7 +338,7 @@
           <li class="pf-no"><span class="pf-x">✗</span> Session recordings</li>
           <li class="pf-no"><span class="pf-x">✗</span> Progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-outline plan-btn-full">Get Started</a>
       </div>
 
       <!-- Professional (Featured) -->
@@ -384,7 +364,7 @@
           <li><span class="pf-check">✓</span> Session recordings</li>
           <li class="pf-no"><span class="pf-x">✗</span> Monthly progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-primary plan-btn-full">Get Started</a>
       </div>
 
       <!-- Advanced -->
@@ -409,12 +389,12 @@
           <li><span class="pf-check">✓</span> All recordings + notes</li>
           <li><span class="pf-check">✓</span> Monthly progress reports</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Get Started</a>
+        <a href="contact.html" class="btn btn-outline plan-btn-full">Get Started</a>
       </div>
 
     </div>
     <p class="pricing-note reveal">
-      🎁 Try a Trial Class for <span class="highlight-99">₹99</span>. 50% refund if not satisfied, or fully adjusted into your plan after enrollment. Custom plans for schools and coaching institutes also available. <a href="contact.html" style="color:var(--primary-light)">Contact us</a> for bulk pricing.
+      🎁 Try a Trial Class for <span class="highlight-99">₹99</span>. 50% refund if not satisfied, or fully adjusted into your plan after enrollment. Custom plans for schools and coaching institutes also available. <a href="contact.html" class="pricing-note-link">Contact us</a> for bulk pricing.
     </p>
   </div>
 </section>
@@ -487,14 +467,14 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section" style="padding:60px 0;">
+<section class="cta-section services-cta-section">
   <div class="cta-bg-orb"></div>
   <div class="container">
     <div class="cta-inner glass-card reveal">
-      <div class="section-tag" style="margin:0 auto 16px">🎓 Get Started</div>
-      <h2 class="section-title" style="text-align:center">Not Sure Which Plan? <span>Let Us Help!</span></h2>
-      <p class="section-subtitle" style="text-align:center;margin:0 auto 32px;">Book a free counselling session and we'll recommend the perfect plan for your academic needs.</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+      <div class="section-tag cta-counselling-tag">🎓 Get Started</div>
+      <h2 class="section-title cta-title-centered">Not Sure Which Plan? <span>Let Us Help!</span></h2>
+      <p class="section-subtitle cta-subtitle-centered">Book a free counselling session and we'll recommend the perfect plan for your academic needs.</p>
+      <div class="cta-btn-row">
         <a href="contact.html" class="btn btn-primary">📅 Free Counselling Session</a>
         <a href="about.html" class="btn btn-outline">👩‍🏫 About Gurpreet Kaur</a>
       </div>

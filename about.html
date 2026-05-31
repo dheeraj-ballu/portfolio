@@ -28,6 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shared.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
@@ -81,7 +82,7 @@
   <canvas id="particles-canvas"></canvas>
   <div class="ab-orb ab-orb1"></div>
   <div class="ab-orb ab-orb2"></div>
-  <div class="container" style="position:relative;z-index:1;">
+  <div class="container about-banner-container">
     <div class="ab-breadcrumb reveal">
       <a href="index.html">Home</a> <span>/</span> About
     </div>
@@ -142,10 +143,10 @@
         <div class="section-tag">👋 Hello, I'm</div>
         <h2 class="section-title">Gurpreet Kaur — <span>Shaping Academic Excellence</span></h2>
         <div class="section-divider"></div>
-        <p style="color:var(--text-secondary);line-height:1.9;margin-bottom:20px;font-size:1.02rem;">
+        <p class="intro-para">
           With over 8 years of dedicated teaching experience, I am a passionate educator committed to transforming how students understand and appreciate Science, Mathematics, and English Linguistics. My journey began with a simple belief: every student has untapped potential waiting to be unlocked.
         </p>
-        <p style="color:var(--text-secondary);line-height:1.9;margin-bottom:32px;font-size:1.02rem;">
+        <p class="intro-para-spaced">
           I specialize in concept-based teaching methodologies that go beyond rote learning — building analytical thinking, problem-solving skills, and genuine curiosity for the subject. Whether it's cracking competitive examinations or mastering everyday communication, my guidance adapts to every learner's unique journey.
         </p>
         <div class="intro-highlights">
@@ -174,7 +175,7 @@
             <div>Flexible Scheduling Available</div>
           </div>
         </div>
-        <div style="display:flex;gap:16px;margin-top:32px;flex-wrap:wrap;">
+        <div class="intro-btn-row">
           <a href="contact.html" class="btn btn-primary">📅 Book a Session</a>
           <a href="experience.html" class="btn btn-outline">📋 View Experience</a>
         </div>
@@ -192,17 +193,17 @@
     </div>
     <div class="mv-grid">
       <div class="mv-card glass-card reveal delay-1">
-        <div class="mv-icon" style="background:linear-gradient(135deg,#7c3aed,#9f67ff)">🎯</div>
+        <div class="mv-icon mv-icon-mission">🎯</div>
         <h3>My Mission</h3>
         <p>To democratize quality education by providing every student — regardless of background — access to expert-level coaching in Science, Mathematics, and Linguistics. I strive to build not just academic skills but lifelong curiosity and confidence.</p>
       </div>
       <div class="mv-card glass-card reveal delay-2">
-        <div class="mv-icon" style="background:linear-gradient(135deg,#3b82f6,#06b6d4)">🔭</div>
+        <div class="mv-icon mv-icon-vision">🔭</div>
         <h3>My Vision</h3>
         <p>To create a generation of critical thinkers and effective communicators who can excel in an ever-evolving world. I envision classrooms — physical and digital — as spaces of inspiration, collaboration, and transformative discovery.</p>
       </div>
       <div class="mv-card glass-card reveal delay-3">
-        <div class="mv-icon" style="background:linear-gradient(135deg,#ec4899,#7c3aed)">💎</div>
+        <div class="mv-icon mv-icon-values">💎</div>
         <h3>Core Values</h3>
         <p>Integrity in teaching, patience with every learner, excellence in delivery, and continuous innovation in pedagogy. I believe that a great teacher doesn't just teach content — they ignite a passion that lasts a lifetime.</p>
       </div>
@@ -218,7 +219,7 @@
         <div class="section-tag">⚡ Expertise</div>
         <h2 class="section-title">Skills &amp; <span>Proficiency</span></h2>
         <div class="section-divider"></div>
-        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:32px;">
+        <p class="skills-intro-para">
           Years of focused expertise have honed my teaching skills across multiple disciplines. Each area reflects a deep passion backed by formal qualifications and real classroom experience.
         </p>
         <div class="skills-list">
@@ -228,7 +229,7 @@
               <div class="skill-pct">96%</div>
             </div>
             <div class="skill-bar">
-              <div class="progress-fill" data-width="96%" style="background:linear-gradient(90deg,#7c3aed,#9f67ff)"></div>
+              <div class="progress-fill bar-purple" data-width="96%"></div>
             </div>
           </div>
           <div class="skill-item reveal delay-2">
@@ -237,7 +238,7 @@
               <div class="skill-pct">94%</div>
             </div>
             <div class="skill-bar">
-              <div class="progress-fill" data-width="94%" style="background:linear-gradient(90deg,#3b82f6,#60a5fa)"></div>
+              <div class="progress-fill bar-blue" data-width="94%"></div>
             </div>
           </div>
           <div class="skill-item reveal delay-3">
@@ -246,7 +247,7 @@
               <div class="skill-pct">98%</div>
             </div>
             <div class="skill-bar">
-              <div class="progress-fill" data-width="98%" style="background:linear-gradient(90deg,#06b6d4,#0891b2)"></div>
+              <div class="progress-fill bar-cyan" data-width="98%"></div>
             </div>
           </div>
           <div class="skill-item reveal delay-4">
@@ -255,7 +256,7 @@
               <div class="skill-pct">97%</div>
             </div>
             <div class="skill-bar">
-              <div class="progress-fill" data-width="97%" style="background:linear-gradient(90deg,#ec4899,#be185d)"></div>
+              <div class="progress-fill bar-pink" data-width="97%"></div>
             </div>
           </div>
           <div class="skill-item reveal delay-5">
@@ -264,7 +265,7 @@
               <div class="skill-pct">95%</div>
             </div>
             <div class="skill-bar">
-              <div class="progress-fill" data-width="95%" style="background:linear-gradient(90deg,#f59e0b,#d97706)"></div>
+              <div class="progress-fill bar-amber" data-width="95%"></div>
             </div>
           </div>
         </div>
@@ -279,12 +280,12 @@
               <div class="sbl-name">Mathematics</div>
               <div class="sbl-level">Expert</div>
             </div>
-            <div class="skill-badge-large glass-card" style="margin-top:20px;">
+            <div class="skill-badge-large glass-card sbl-offset">
               <div class="sbl-icon">🔬</div>
               <div class="sbl-name">Science</div>
               <div class="sbl-level">Expert</div>
             </div>
-            <div class="skill-badge-large glass-card" style="margin-top:20px;">
+            <div class="skill-badge-large glass-card sbl-offset">
               <div class="sbl-icon">📖</div>
               <div class="sbl-name">Linguistics</div>
               <div class="sbl-level">Expert</div>
@@ -334,14 +335,14 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section" style="padding:60px 0;">
+<section class="cta-section cta-section-spaced">
   <div class="cta-bg-orb"></div>
   <div class="container">
     <div class="cta-inner glass-card reveal">
-      <div class="section-tag" style="margin:0 auto 16px">🌟 Start Learning</div>
-      <h2 class="section-title" style="text-align:center">Begin Your Academic <span>Transformation Today</span></h2>
-      <p class="section-subtitle" style="text-align:center;margin:0 auto 32px;">Join hundreds of successful students — book your first session and experience the difference.</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+      <div class="section-tag cta-section-tag">🌟 Start Learning</div>
+      <h2 class="section-title cta-title-centered">Begin Your Academic <span>Transformation Today</span></h2>
+      <p class="section-subtitle cta-subtitle-centered">Join hundreds of successful students — book your first session and experience the difference.</p>
+      <div class="cta-btn-row">
         <a href="contact.html" class="btn btn-primary">📅 Book Trial Class – ₹99</a>
         <a href="services.html" class="btn btn-outline">💼 View Services</a>
         <div class="cta-trust-note">

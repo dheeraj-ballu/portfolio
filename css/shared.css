@@ -1,0 +1,206 @@
+/* ============================================================
+   SHARED UTILITY CLASSES  (extracted from inline styles)
+   Included by: index, about, contact, experience, services
+   ============================================================ */
+
+/* ── Banner / section container helpers ─────────────────────── */
+.banner-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.about-banner-container {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-center {
+  justify-content: center;
+}
+
+/* ── CTA section ─────────────────────────────────────────────── */
+.cta-section-spaced {
+  padding: 60px 0;
+}
+.cta-section-tag {
+  margin: 0 auto 16px;
+}
+.cta-title-centered {
+  text-align: center;
+}
+.cta-subtitle-centered {
+  text-align: center;
+  margin: 0 auto 32px;
+}
+.cta-subtitle-lg-margin {
+  text-align: center;
+  margin: 0 auto 36px;
+}
+.cta-btn-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ── Intro text paragraph styles ─────────────────────────────── */
+.intro-para {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 20px;
+  font-size: 1.02rem;
+}
+.intro-para-spaced {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 32px;
+  font-size: 1.02rem;
+}
+.skills-intro-para {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* ── Intro CTA button row ─────────────────────────────────────── */
+.intro-btn-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+/* ── Mission/Vision icon gradients ───────────────────────────── */
+.mv-icon-mission {
+  background: linear-gradient(135deg, #7c3aed, #9f67ff);
+}
+.mv-icon-vision {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+.mv-icon-values {
+  background: linear-gradient(135deg, #ec4899, #7c3aed);
+}
+
+/* ── Skill progress-bar colour classes ───────────────────────── */
+.bar-purple {
+  background: linear-gradient(90deg, #7c3aed, #9f67ff);
+}
+.bar-blue {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+.bar-cyan {
+  background: linear-gradient(90deg, #06b6d4, #0891b2);
+}
+.bar-pink {
+  background: linear-gradient(90deg, #ec4899, #be185d);
+}
+.bar-amber {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+/* ── Skill badge spacing ─────────────────────────────────────── */
+.sbl-offset {
+  margin-top: 20px;
+}
+
+/* ── Feature-card icon colour classes (index.html) ───────────── */
+.fi-science  { background: linear-gradient(135deg, #7c3aed, #9f67ff); }
+.fi-math     { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
+.fi-english  { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+.fi-exam     { background: linear-gradient(135deg, #ec4899, #be185d); }
+
+/* ── Testimonial avatar colour classes (index.html) ──────────── */
+.t-avatar-blue  { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+.t-avatar-pink  { background: linear-gradient(135deg, #ec4899, #7c3aed); }
+.t-avatar-cyan  { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+
+/* ── Why-us CTA button top margin ────────────────────────────── */
+.btn-mt-sm { margin-top: 12px; }
+
+/* ── Footer brand logo in index ──────────────────────────────── */
+.footer-brand-logo { margin-bottom: 0; }
+
+/* ── Contact info-card heading ───────────────────────────────── */
+.ci-card-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+/* ── Contact icon colour classes ─────────────────────────────── */
+.ci-icon-email    { background: linear-gradient(135deg, #7c3aed, #9f67ff); }
+.ci-icon-location { background: linear-gradient(135deg, #ec4899, #7c3aed); }
+.ci-icon-hours    { background: linear-gradient(135deg, #f59e0b, #d97706); }
+
+/* ── Social icon colour classes ──────────────────────────────── */
+.csl-facebook  { background: #1877f2; }
+.csl-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.csl-youtube   { background: #ff0000; }
+.csl-linkedin  { background: #0a66c2; }
+
+/* ── Contact form message group (full-width span) ────────────── */
+.form-group-full {
+  grid-column: span 2;
+}
+
+/* ── Contact description paragraph ──────────────────────────── */
+.contact-desc-para {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* ── FAQ list width ─────────────────────────────────────────── */
+.faq-list-narrow {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* ── Experience / Timeline header gradients ─────────────────── */
+.tl-header-purple { background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(159,103,255,0.1)); }
+.tl-header-blue   { background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.1));   }
+.tl-header-pink   { background: linear-gradient(135deg, rgba(236,72,153,0.2), rgba(124,58,237,0.1));  }
+.tl-header-cyan   { background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(8,145,178,0.1));    }
+
+/* ── Experience stat bar widths ─────────────────────────────── */
+.esc-fill-85 { width: 85%; }
+.esc-fill-90 { width: 90%; }
+.esc-fill-95 { width: 95%; }
+.esc-fill-80 { width: 80%; }
+.esc-fill-75 { width: 75%; }
+.esc-fill-70 { width: 70%; }
+
+/* ── Certification icon colour classes ───────────────────────── */
+.cert-icon-purple { background: linear-gradient(135deg, #7c3aed, #9f67ff); }
+.cert-icon-blue   { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
+.cert-icon-cyan   { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+.cert-icon-pink   { background: linear-gradient(135deg, #ec4899, #be185d); }
+.cert-icon-amber  { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.cert-icon-violet { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+
+/* ── Services page ───────────────────────────────────────────── */
+.srv-header-math   { background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(159,103,255,0.2)); }
+.srv-header-sci    { background: linear-gradient(135deg, rgba(59,130,246,0.3), rgba(6,182,212,0.2));   }
+.srv-header-eng    { background: linear-gradient(135deg, rgba(6,182,212,0.3), rgba(8,145,178,0.2));    }
+.srv-header-phy    { background: linear-gradient(135deg, rgba(79,70,229,0.3), rgba(124,58,237,0.2));   }
+
+.srv-enroll-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+.srv-section-tag-center { margin-top: 80px; }
+
+/* Pricing buttons */
+.plan-btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Services CTA */
+.services-cta-section { padding: 60px 0; }
+.cta-counselling-tag  { margin: 0 auto 16px; }
+
+/* Pricing note inline link */
+.pricing-note-link { color: var(--primary-light); }

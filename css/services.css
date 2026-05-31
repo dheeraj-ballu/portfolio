@@ -236,3 +236,14 @@
 @media (max-width: 800px) {
   .srv-grid { grid-template-columns: 1fr; }
 }
+
+/* If only one card remains in the row on desktop/tablet, center it horizontally */
+@media (min-width: 768px) {
+  .srv-grid > .srv-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: calc(50% - 14px);
+    width: 100%;
+  }
+}
+
